@@ -1,0 +1,11 @@
+<h1>Generate your CV or Cover Letter</h1>
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Generate</button>
+</form>
+
+{% if result %}
+  <h2>Generated Output:</h2>
+  <pre>{{ result }}</pre>
+{% endif %}

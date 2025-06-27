@@ -1,2 +1,4 @@
 Django
 python-decouple
+openai
+python-dotenv
