@@ -19,4 +19,4 @@ def cv_form_view(request):
     else:
         form = CVGeneratorForm()
     
-    return render(request, 'generator/generate.html', {'form': form, 'result': result})
+    return render(request, 'genCV/generateCV.html', {'form': form, 'result': result})
