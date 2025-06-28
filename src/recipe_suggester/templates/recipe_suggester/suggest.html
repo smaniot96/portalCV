@@ -1,0 +1,12 @@
+<h1>Italian Recipe Suggester 🍝</h1>
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Suggest Recipe</button>
+</form>
+
+{% if recipe %}
+  <hr>
+  <h2>Your AI-Powered Italian Recipe:</h2>
+  <pre>{{ recipe }}</pre>
+{% endif %}
