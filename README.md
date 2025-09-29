@@ -20,17 +20,22 @@ Both apps interact with the OpenAI API to generate text outputs.
 - Modular apps for easy maintenance and scalability
 
 ## 📁 Project Structure
-<details>
-<summary>Click to expand</summary>
+
 myproject/
+│
 ├── cv_generator/ # App for CV creation
+│
 ├── recipe_finder/ # App for recipe generation
+│
 ├── myproject/ # Project settings and URLs
+│
 ├── templates/ # HTML templates for both apps
+│
 ├── static/ # CSS, JS, images
+│
 ├── manage.py # Django management script
-└── README.md # This file
-</details>
+└── README.md # Project documentation (this file)
+
 
 
 ## 🚀 Setup Instructions
@@ -62,17 +67,22 @@ export OPENAI_API_KEY="your_openai_api_key_here"
 ```
 
 4. **Run migrations**
+
+```bash
 python manage.py migrate
+```
 
 5. **Start development server**
+```bash
 python manage.py runserver
+```
 
 6. **PortalCV endpoints**
-
+```bash
 /genCV
 
 /recipe_suggester
-
+```
 
 
 
