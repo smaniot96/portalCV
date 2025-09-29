@@ -19,7 +19,7 @@ Both apps interact with the OpenAI API to generate text outputs.
 - Django backend handling form submissions, API requests, and response rendering
 - Modular apps for easy maintenance and scalability
 
-## 📁 Project Structure
+## Project Structure
 
 myproject/
 │
