@@ -25,7 +25,7 @@ def generate_cv_or_cover_letter(name, job_title, experience, job_description, ge
             messages=[
                 {"role": "user", "content": prompt}
             ],
-            temperature=0.7,
+            temperature=0.9,
         )
         return chat_completion.choices[0].message.content
 
