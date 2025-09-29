@@ -20,6 +20,8 @@ Both apps interact with the OpenAI API to generate text outputs.
 - Modular apps for easy maintenance and scalability
 
 ## 📁 Project Structure
+<details>
+<summary>Click to expand</summary>
 myproject/
 ├── cv_generator/ # App for CV creation
 ├── recipe_finder/ # App for recipe generation
@@ -28,6 +30,7 @@ myproject/
 ├── static/ # CSS, JS, images
 ├── manage.py # Django management script
 └── README.md # This file
+</details>
 
 
 ## 🚀 Setup Instructions
@@ -37,22 +40,38 @@ myproject/
 ```bash
 git clone https://github.com/smaniot96/portalCV.git
 cd portalCV
+```
 
+2. **Activate virtual environment**
+
+```bash
 python -m venv venv
 source venv/bin/activate
+```
 
+3. **Install requirements**
 
-
+```bash
 pip install -r requirements.txt
 
-Create a .env file or set an environment variable for your OpenAI API key:
-export OPENAI_API_KEY="your_openai_api_key_here"
+```
 
-Run migrations
+Create a .env file or set an environment variable for your OpenAI API key:
+```bash
+export OPENAI_API_KEY="your_openai_api_key_here"
+```
+
+4. **Run migrations**
 python manage.py migrate
 
-Start development server
+5. **Start development server**
 python manage.py runserver
+
+6. **PortalCV endpoints**
+
+/genCV
+
+/recipe_suggester
 
 
 
