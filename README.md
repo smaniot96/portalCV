@@ -36,29 +36,6 @@ myproject/
 ├── manage.py # Django management script
 └── README.md # Project documentation (this file)
 
-## Project Structure
-finance-stock-prediction/
-│
-├── data/
-│ ├── raw/ # Raw downloaded stock price CSV files
-│ └── processed/ # Cleaned and feature-engineered datasets
-│
-├── notebooks/ # Jupyter notebooks for exploration and analysis
-│
-├── results/
-│ ├── figures/ # Plots and visualizations
-│ └── models/ # Trained model files
-│
-├── src/ # Source code modules
-│ ├── data_collection.py # Script to download stock data with yfinance
-│ ├── data_cleaning.py # Data cleaning and preprocessing functions
-│ ├── features.py # Feature engineering and PCA analysis
-│ ├── train.py # Model training scripts
-│ └── evaluate.py # Model evaluation and testing
-│
-├── requirements.txt # Python dependencies
-├── README.md # Project documentation (this file)
-└── main.py # Optional entry point script
 
 
 
