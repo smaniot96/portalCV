@@ -35,10 +35,11 @@ def latex_to_pdf(latex_code: str) -> bytes:
 
 
 def cv_form_view(request):
-    result = None
+    context = None
 
     if request.method == 'POST':
         form = CVGeneratorForm(request.POST)
+        context = {'form': form}
         if form.is_valid():
             data = form.cleaned_data  # Django automatically returns a dict
             result = generate_cv(data)  # Just pass it directly

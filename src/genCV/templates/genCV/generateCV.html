@@ -1,22 +1,28 @@
+
+{% load static %}
+{% load form_tags %}
+
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
-    {% load form_tags %}
 
     <meta charset="UTF-8">
     <title>Generate CV</title>
-
     <!-- Bootstrap CSS -->
     <link 
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
         rel="stylesheet"
-        integrity="sha384-gHnpv+TihZz7qE9+Id0V0PS3VczYgE1E4D6+QEVkG7h0J8YJd2oz1U2+QYQvoB8G" 
-        crossorigin="anonymous"
     >
+    <link rel="stylesheet" href="{% static 'gencv/style.css' %}">
+
 </head>
+
 <body class="bg-light">
 
 <div class="container my-5">
+
     <h1 class="mb-4 text-center">Generate your CV</h1>
 
     <form method="post" class="p-4 bg-white rounded shadow-sm border">

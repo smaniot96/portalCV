@@ -10,7 +10,7 @@ class CVGeneratorForm(forms.Form):
     google_scholar = forms.URLField(label="Google Scholar URL", required=False)
 
     # --- Summary / Job Title ---
-    job_title = forms.CharField(label="Current Job Title", max_length=200, required=False)
+    job_title = forms.CharField(label="Current Job Title/Student status", max_length=200, required=False)
 
     # --- Work Experience ---
     work_experience = forms.CharField(
@@ -24,7 +24,6 @@ class CVGeneratorForm(forms.Form):
         label="Education",
         widget=forms.Textarea(attrs={"rows": 5, "placeholder": "Example:\nPhD in Mathematical Physics, University of Nottingham (2021–2025)\nMSc Theoretical Physics, Trieste (2018–2020, 110/110 cum laude)"}),
         help_text="List degrees, institutions, and years.",
-        required=False
     )
 
     # --- Certificates ---
@@ -38,6 +37,8 @@ class CVGeneratorForm(forms.Form):
     languages = forms.CharField(
         label="Languages",
         widget=forms.Textarea(attrs={"rows": 2, "placeholder": "Example: Italian (native), English (C2), Spanish (B1)"}),
+        required=False
+
     )
 
     # --- Publications ---
