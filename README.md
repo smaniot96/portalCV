@@ -62,9 +62,13 @@ pip install -r requirements.txt
 
 ```
 
-Create a .env file or set an environment variable for your OpenAI API key:
+Create a .env file in the main project folder:
 ```bash
-export OPENAI_API_KEY="your_openai_api_key_here"
+DEBUG=True
+SECRET_KEY = replace_me
+ALLOWED_HOSTS=localhost,127.0.0.1
+OPENAI_API_KEY=sk-xxxxxxxYOURKEYxxxxxxxx
+GROQ_API_KEY= sk-xxxxxxxYOURKEYxxxxxxxx
 ```
 
 4. **Run migrations**
